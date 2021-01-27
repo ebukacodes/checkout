@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Invoice from PandaScrow</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/animate/animate.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/select2/select2.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/main.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-contact2">
+      <div class="container-contact2">
+        <div class="wrap-contact2">
+          <form class="contact2-form validate-form">
+            <img
+              src="images/large-udemy.jpg"
+              alt=""
+              class="avatar"
+            />
+            <span class="contact2-form-title">
+              Invoice from PandaScrow
+            </span>
+
+            <span class="contact3-form-title">
+              Billed to Eze Luke
+            </span>
+
+            <span class="contact4-form-title">
+              N50,000 due 30th November, 2027
+            </span>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <button
+                  id="formButton"
+                  style="
+                    background: #fff;
+                    box-shadow: 0 4px 12px 0 #4095e4;
+                    width: 20rem !important;
+                    padding-right: 14rem;
+                  "
+                  class="btn btn-block"
+                >
+                  <i
+                    class="fa fa-credit-card"
+                    aria-hidden="true"
+                  ></i>
+                  Card
+                </button>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <button
+                  id="formButton1"
+                  style="
+                    background: #fff;
+                    box-shadow: 0 4px 12px 0 #4095e4;
+                    width: 20rem !important;
+                    padding-right: 14rem;
+                  "
+                  class="btn btn-block"
+                >
+                  <i
+                    class="fa fa-building"
+                    aria-hidden="true"
+                  ></i>
+                  Bank
+                </button>
+              </div>
+            </div>
+
+            <div id="form0" class="row mb-3">
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-number"
+                  placeholder="Card number"
+                  required=""
+                  style="width: 42rem"
+                />
+                <div class="invalid-feedback">
+                  Card number is required
+                </div>
+              </div>
+              <div class="col-md-2 mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-expiration"
+                  placeholder="MM/YY"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-cvv"
+                  placeholder="CVV"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <button
+              id="but1"
+              class="btn btn-primary btn-lg btn-block"
+              style="
+                background-color: #4095e4 !important;
+                border: none !important;
+              "
+              type="submit"
+            >
+              Pay Invoice
+            </button>
+
+            <!-- this is for bank -->
+
+            <div id="form2" class="row mb-3">
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-number"
+                  placeholder="Account number"
+                  required=""
+                  style="width: 42rem"
+                />
+                <div class="invalid-feedback">
+                  Card number is required
+                </div>
+              </div>
+              <div class="col-md-2 mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-expiration"
+                  placeholder="Bank"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Bank required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cc-cvv"
+                  placeholder="Number"
+                  required=""
+                />
+                <div class="invalid-feedback">
+                  Number required
+                </div>
+              </div>
+              <button
+                class="btn btn-primary btn-lg btn-block"
+                style="
+                  background-color: #4095e4 !important;
+                  border: none !important;
+                "
+                type="submit"
+              >
+                Pay Invoice
+              </button>
+            </div>
+          </form>
+        </div>
+        
+
+        <!-- this is for bank -->
+      </div>
+    </div>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendor/select2/select2.min.js"></script>
+
+    <script>
+      // JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+
+        window.addEventListener(
+          'load',
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName(
+              'needs-validation'
+            );
+
+            // Loop over them and prevent submission
+            Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  'submit',
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+
+    <script>
+      $('#formButton').click(function () {
+        $('#form2').hide();
+        $('#form0').toggle();
+        $('#but1').toggle();
+      });
+    </script>
+
+    <script>
+      $('#formButton1').click(function () {
+        $('#form0').hide();
+        $('#form2').toggle();
+        $('#but1').hide();
+      });
+    </script>
+  </body>
+</html>
