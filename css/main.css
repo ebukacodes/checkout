@@ -9,7 +9,6 @@ html {
   height: 100%;
   font-family: 'Varela Round', sans-serif;
   background-color: #4095e4;
-  background-color: linear-gradient();
 }
 
 h1,
@@ -38,7 +37,7 @@ p {
 }
 
 #cc-number {
-  box-shadow: 0 4px 12px 0 #4095e4;
+  box-shadow: 0 2px 1px -1px gray;
 }
 
 #cc-expiration,
@@ -93,6 +92,7 @@ iframe {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
 }
 
 .avatar {
@@ -119,7 +119,7 @@ iframe {
   background-color: #4095e4;
   background-image: -webkit-linear-gradient(
     100deg,
-    #fff 50%,
+    rgb(237, 227, 227) 50%,
     #4095e4 50%
   );
   min-height: 500px;
@@ -140,6 +140,9 @@ iframe {
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 55px 90px 55px;
+  -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+
 }
 
 /*------------------------------------------------------------------
@@ -196,6 +199,9 @@ iframe {
   box-shadow: none;
   border-color: transparent !important;
 }
+#formButton {
+  width: 80%;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -204,3 +210,4 @@ iframe {
   border-color: transparent !important;
 }
 
+}
